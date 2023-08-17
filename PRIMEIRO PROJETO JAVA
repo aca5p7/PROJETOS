@@ -1,0 +1,39 @@
+/*
+ * Faça um programa que receba o ano de nascimento de uma pessoa e o ano atual,
+ * calcule e mostre:
+ *
+ * a) a idade dessa pessoa;
+ * b) quantos anos ela terá em 2050
+ *
+ */
+
+package com.mycompany.exercicio8;
+
+/**
+ *
+ * @author clsma
+ */
+public class Exercicio8 {
+
+    public static void main(String[] args) {
+
+   //criando as variaveis
+    int nasc, anoatual, idadeatual, anofuturo, idadefutura;
+
+   //atrelando valor
+
+   nasc = 2002;
+   anoatual = 2023;
+   anofuturo = 2050;
+
+  //calculo da idade
+
+   idadeatual = anoatual - nasc ;
+   idadefutura = ( anofuturo - anoatual ) + idadeatual;
+
+  // visualizando o valor
+
+   System.out.println("Idade atual: " + idadeatual );
+   System.out.println("Idade futura: " + idadefutura );      
+    }
+}
