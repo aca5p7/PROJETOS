@@ -1,0 +1,128 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    background-color: #dc69d2;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 3px solid white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #9455c2;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1 1 60%;
+    min-width: 280px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+section#projetos article {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+aside#extras {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1 1 30%;
+    min-width: 220px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+aside#extras ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+aside#extras ul li a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+aside#extras ul li a:hover,
+aside#extras ul li a:focus {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px 10px;
+    background-color: #925ac6;
+    color: white;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    section, aside#extras {
+        flex: 1 1 100%;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

@@ -1,93 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quer casar comigo?</title>
-    <style>
-        body {
-            background-color: red;
-            overflow: hidden;
-        }
-        h1{
-            text-align: center;
-            text-transform: uppercase;
-            color: #fff;
-        }
-        .center{
-            display: flex;
-            margin: 0;
-            justify-content: center;
-            align-items: center;
-            height: 30vh;
-        }
-        h2{
-            text-align: center;
-            text-transform: uppercase;
-            color: #fff
-        }
-                
-        a{
-            text-decoration: none;
-            color: inherit;
-        }
-        .btn{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        button{
-            margin: 0 20px;
-            color: #000;
-            background-color: #fff;
-            border: none;
-            border-radius: 5px;
-            font-size: 2rem;
-            cursor: pointer;
-        }
-        .img{
-            display: block;
-            background-image: url('https://uniquebox.vteximg.com.br/arquivos/ids/158482/pedido-de-namoro_front.png?v=636936274247270000');
-            background-size: cover;
-            background-color: #fff;
-            background-repeat: no-repeat;
-            background-position: center;
-            height: 300px;
-            width: 300px;
-            margin: 0 auto;
-            margin-bottom: 50px;
-            border-radius: 50%;
-        }
-        
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Minha Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="center">
-        <h1>Eu não vivo minha vida sem você</h1>
-    </div class= "center">
-    <h2>Quer casar comigo?</h2></div>
-    <div class="img"></div>
-    <div class="btn">
-        <button id="sim" ><a href="https://www.youtube.com/watch?v=lm50i_r-pd8">Sim</a></button>
-        <button id="nao">Não</button>
-    </div>
+    <header>
+        <div class="header-content">
+<img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar" />
+            <h1>Alexsander Moreira de Castilho</h1>
+            <p class="tagline">Viva o presente, sem se esquecer do amanhã</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mim">Sobre mim</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#extras">Extras</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="sobre-mim">
+            <h2>Sobre mim</h2>
+            <p>Minha maior paixão na programação é na área de dados, na ánalise, na montagem da estrutura dos dados e também na limpeza. Vejo como uma área muito ampla aonde não é feito a mesma coisa todo dia, sempre te forçando a evoluir e a ser versatil.</p>
+        </section>
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Python</li>
+                <li>Java básico</li>
+                <li>SQL</li>
+                <li>Git e controle de versão</li>
+                <li>React básico</li>
+            </ul>
+        </section>
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <article>
+                <h3>Projeto 1: Site Portfólio</h3>
+                <p>Um site pessoal para mostrar meus projetos e habilidades, desenvolvido com HTML e CSS puro.</p>
+            </article>
+            <article>
+                <h3>Projeto 2: ToDo List</h3>
+                <p>Aplicação simples para gerenciar tarefas diárias, utilizando JavaScript para interatividade.</p>
+            </article>
+        </section>
+        <aside id="extras">
+            <h2>Extras</h2>
+            <p>Curiosidades: Amo ler e viagens.</p>
+            <p>Links úteis:</p>
+            <ul>
+                <li><a href="https://github.com/aca5p7/PROJETOS" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="https://www.instagram.com/c.astilhoo/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/in/alexsander-castilho-018634274/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>Contato: alexsander0907@outlook.pt</p>
+        <p>© 2025 Alexsander Moreira de Castilho</p>
+    </footer>
 </body>
-<script>
-    const naoBtn = document.querySelector('#nao');
-    const simBtn = document.querySelector('#sim');
-    const img = document.querySelector('.img');
-
-    simBtn.addEventListener('mouseover', ()=>{
-        img.style.backgroundImage = "url('https://uniquebox.vteximg.com.br/arquivos/ids/158485/pedido-de-namoro_right.png?v=636936274608270000')"
-    });
-    simBtn.addEventListener('mouseout', ()=>{
-        img.style.backgroundImage = "url('https://uniquebox.vteximg.com.br/arquivos/ids/158482/pedido-de-namoro_front.png?v=636936274247270000')"
-    });
-    naoBtn.addEventListener('mouseover', ()=>{
-       naoBtn.style.position = 'absolute';
-        naoBtn.style.left = Math.floor(Math.random() * window.innerWidth) + "px";
-        naoBtn.style.top = Math.floor(Math.random() * window.innerHeight) + "px"; 
-    });
-</script>
 </html>
